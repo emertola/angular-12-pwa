@@ -1,0 +1,4 @@
+{
+  "prettier.bracketSameLine": true,
+  "php.validate.executablePath": ""
+}

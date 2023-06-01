@@ -1,0 +1,32 @@
+<div class="container-fluid p-5 d-flex justify-content-center">
+  <div class="card border-0 mt-5" style="width: 32rem">
+    <div class="card-body">
+      <div style="width: 140px" class="mx-auto mb-5">
+        <img
+          src="assets/images/pwa-logo.png"
+          alt=""
+          class="img-fluid rounded-4" />
+      </div>
+      <div class="mb-4 bg-light rounded-3">
+        <div class="container-fluid p-0">
+          <nz-upload
+            nzType="drag"
+            [nzMultiple]="true"
+            nzAction="https://www.mocky.io/v2/5cc8019d300000980a055e76"
+            (nzChange)="handleChange($event)">
+            <p class="ant-upload-drag-icon">
+              <span nz-icon nzType="inbox"></span>
+            </p>
+            <p class="ant-upload-text">
+              Click or drag file to this area to upload
+            </p>
+            <p class="ant-upload-hint">
+              Support for a single or bulk upload. Strictly prohibit from
+              uploading company data or other band files
+            </p>
+          </nz-upload>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
